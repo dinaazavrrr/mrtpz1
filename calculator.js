@@ -27,24 +27,14 @@ function displayResult(a, b, c) {
     console.log("Рівняння не має дійсних коренів.");
     console.log("Тип коренів: комплексні (уявні) числа");
   }
-  // test mistake
-  console.log("Помилка! Цей рядок не має бути в програмі.");
+
+
+//  test mistake
+console.log("Помилка! Цей рядок не має бути в програмі.");
+
 }
 
-  if (d > 0) {
-    const root1 = (-b + Math.sqrt(d)) / (2 * a);
-    const root2 = (-b - Math.sqrt(d)) / (2 * a);
-    console.log("Знайдено два корені:");
-    console.log(`x₁ = ${root1}`);
-    console.log(`x₂ = ${root2}`);
-  } else if (d === 0) {
-    const root = -b / (2 * a);
-    console.log("Має один корінь:");
-    console.log(`x = ${root}`);
-  } else {
-    console.log("Рівняння не має дійсних коренів.");
-  }
-}
+
 
 function startInteractiveInput() {
   const rl = readline.createInterface({
