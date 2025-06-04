@@ -27,6 +27,8 @@ function displayResult(a, b, c) {
     console.log("Рівняння не має дійсних коренів.");
     console.log("Тип коренів: комплексні (уявні) числа");
   }
+  // test mistake
+  console.log("Помилка! Цей рядок не має бути в програмі.");
 }
 
   if (d > 0) {
