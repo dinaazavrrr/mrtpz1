@@ -4,6 +4,8 @@ const readline = require("readline");
 function displayResult(a, b, c) {
   if (a === 0) throw new Error("Коефіцієнт a не може дорівнювати нулю.");
 
+  console.log("➤ Обчислення результату...");
+
   const d = b * b - 4 * a * c;
   console.log(`Рівняння: ${a.toFixed(1)}x² + ${b.toFixed(1)}x + ${c.toFixed(1)} = 0`);
 
