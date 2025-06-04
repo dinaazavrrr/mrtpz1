@@ -9,6 +9,26 @@ function displayResult(a, b, c) {
   const d = b * b - 4 * a * c;
   console.log(`Рівняння: ${a.toFixed(1)}x² + ${b.toFixed(1)}x + ${c.toFixed(1)} = 0`);
 
+  if (discriminant > 0) {
+    const root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+    const root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+    console.log("Знайдено два корені:");
+    console.log(`x₁ = ${root1}`);
+    console.log(`x₂ = ${root2}`);
+    console.log("Тип коренів: два різних дійсних числа");
+
+  } else if (discriminant === 0) {
+    const root = -b / (2 * a);
+    console.log("Має один корінь:");
+    console.log(`x = ${root}`);
+    console.log("Тип коренів: один дійсний розв’язок (кратний)");
+
+  } else {
+    console.log("Рівняння не має дійсних коренів.");
+    console.log("Тип коренів: комплексні (уявні) числа");
+  }
+}
+
   if (d > 0) {
     const root1 = (-b + Math.sqrt(d)) / (2 * a);
     const root2 = (-b - Math.sqrt(d)) / (2 * a);
